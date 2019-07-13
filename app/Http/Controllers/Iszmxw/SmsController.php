@@ -18,10 +18,12 @@ class SmsController extends Controller
     //
     public function send(Request $request)
     {
-        $data = Sms::getOne();
-        $url = self::url($data['mobile']);
-        $client = new Client();
-        $res = $client->get($url)->getBody()->getContents();
-        return $res;
+        $list = Sms::getList();
+        foreach ($list as $key => $val) {
+            $url = self::url($val['mobile']);
+            $client = new Client();
+            $res = $client->get($url)->getBody()->getContents();
+            dump($res);
+        }
     }
 }
