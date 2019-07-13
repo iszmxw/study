@@ -20,5 +20,5 @@ Route::get('asas', function () {
 });
 
 Route::group(['prefix' => 'iszmxw'], function () {
-    Route::any('sms', 'Iszmxw/Smscontroller@send');
+    Route::any('send', 'Iszmxw/Smscontroller@send');
 });
