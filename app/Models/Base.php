@@ -3,14 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Base extends Model
 {
-
+    use SoftDeletes;
     // 设置时间戳字段
     public $timestamps = true;
     // 设置时间保存为时间戳
-    public $dateFormat = 'U';
+    public $dateFormat = true;
     // 过滤黑名单字段
     public $guarded = [];
 
