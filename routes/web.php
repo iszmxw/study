@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('asas', function () {
     phpinfo();
 });
+
+Route::group(['prefix' => 'iszmxw'], function () {
+    Route::any('sms', 'Iszmxw/Smscontroller@send');
+});
