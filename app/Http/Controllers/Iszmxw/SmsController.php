@@ -18,7 +18,6 @@ class SmsController extends Controller
     public function send(Request $request)
     {
         $data = Sms::getOne();
-        dd($data);
         $url = self::url($data['mobile']);
         $client = new \Client();
         $res = $client->get($url)->getBody()->getContents();
