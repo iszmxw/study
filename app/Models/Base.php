@@ -11,7 +11,7 @@ class Base extends Model
     // 设置时间戳字段
     public $timestamps = true;
     // 设置时间保存为时间戳
-    public $dateFormat = true;
+    public $dateFormat = 'U';
     // 过滤黑名单字段
     public $guarded = [];
 
