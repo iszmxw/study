@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Iszmxw;
 
 use App\Models\Sms;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -19,7 +20,7 @@ class SmsController extends Controller
     {
         $data = Sms::getOne();
         $url = self::url($data['mobile']);
-        $client = new \Client();
+        $client = new Client();
         $res = $client->get($url)->getBody()->getContents();
         return $res;
     }
