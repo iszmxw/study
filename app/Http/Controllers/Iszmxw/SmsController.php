@@ -23,7 +23,6 @@ class SmsController extends Controller
             $url = self::url($val['mobile']);
             $client = new Client();
             $res = $client->get($url)->getBody()->getContents();
-            dump($res);
         }
     }
 }
