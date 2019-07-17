@@ -22,8 +22,12 @@ class SmsController extends Controller
         foreach ($list as $key => $val) {
             $url = self::url($val['mobile']);
             $client = new Client();
-            $re = $client->get($url)->getBody()->getContents();
-            dump($re);
+            $res = $client->get($url)->getBody()->getContents();
+            $arr = json_decode($res, true);
+            if ($arr['code'] == 200 && $arr['data']['Code'] != "isv.BUSINESS_LIMIT_CONTROL") {
+                \Log::info($arr);
+            }
+            dump($res);
         }
     }
 }
