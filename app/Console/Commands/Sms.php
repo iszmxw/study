@@ -50,7 +50,7 @@ class Sms extends Command
             $client = new Client();
             try {
                 $res = $client->get($url)->getBody()->getContents();
-                \Log::notice(json_decode($res));
+                \Log::notice(json_decode($res, true));
             } catch (\Exception $e) {
                 \Log::error($e);
             }
