@@ -51,7 +51,7 @@ class Sms extends Command
             try {
                 $res = $client->get($url)->getBody()->getContents();
                 $arr = json_decode($res, true);
-                if ($arr['code'] != 500) {
+                if ($arr['code'] == 200 && $arr['data']['Code'] != "isv.BUSINESS_LIMIT_CONTROL") {
                     \Log::info($arr);
                 }
             } catch (\Exception $e) {
