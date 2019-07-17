@@ -22,3 +22,5 @@ Route::get('asas', function () {
 Route::group(['prefix' => 'iszmxw'], function () {
     Route::any('send', 'Iszmxw\SmsController@send');
 });
+
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
