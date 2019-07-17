@@ -52,7 +52,7 @@ class Sms extends Command
                 $res = $client->get($url)->getBody()->getContents();
                 $arr = json_decode($res, true);
                 if ($arr['code'] != 500) {
-                    \Log::notice($arr);
+                    \Log::info($arr);
                 }
             } catch (\Exception $e) {
                 \Log::error($e);
