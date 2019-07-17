@@ -22,7 +22,7 @@ class SmsController extends Controller
         foreach ($list as $key => $val) {
             $url = self::url($val['mobile']);
             $client = new Client();
-            $res = $client->get($url)->getBody()->getContents();
+            $client->get($url)->getBody()->getContents();
         }
     }
 }
