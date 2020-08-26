@@ -1,4 +1,4 @@
-<p align="center"><img src="static/svg/plan.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/iszmxw/study/master/static/svg/plan.svg" width="100"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Study Plan
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel是一个具有表达力，优雅语法的Web应用程序框架。 我们认为，发展必须是一种令人愉悦的创造力，才能真正实现。 Laravel通过减轻许多Web项目中使用的常见任务来减轻开发工作的痛苦，例如：
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
