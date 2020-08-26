@@ -9,15 +9,15 @@
 
 ## 学习计划
 
-这是我最近整理的一些学习计划，由于有些东西不是很了解，下面吧这些东西列入以后的学习计划中，按照下面的计划不断完善自己
+这是我最近整理的一些计划，由于有些东西不是很了解，下面吧这些东西列入以后的学习计划中，按照下面的计划不断完善自己，温故而知新
 
-- [设计模式](https://laravel.com/docs/routing)的学习.
-- [MongoDB](https://laravel.com/docs/routing)的使用.
-- [Swoole](https://laravel.com/docs/container)的使用.
-- 学习 [KafKa](https://laravel.com/docs/session) 以及 [Rabbitmq](https://laravel.com/docs/cache) 的使用.
-- 学习[Mysql](https://laravel.com/docs/eloquent)调优技巧.
-- 学习Nginx负载均衡和Nginx反向代理
-- 学习算法数据结构
+- [设计模式](https://laravel.com/docs/routing)
+- [MongoDB](https://laravel.com/docs/routing)
+- [Swoole](https://laravel.com/docs/container)
+- [KafKa](https://laravel.com/docs/session) 以及 [Rabbitmq](https://laravel.com/docs/cache) 
+- [Mysql](https://laravel.com/docs/eloquent)调优技巧.
+- Nginx负载均衡和Nginx反向代理
+- 算法数据结构
 
 ## 列入计划
 
