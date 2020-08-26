@@ -20,7 +20,11 @@ Laravel是一个具有表达力，优雅语法的Web应用程序框架。 我们
 
 ## 列入计划
 
-现在开始提升PHP方面的相关东西
+提升PHP方面的相关东西
+学习设计模式
+学习Go语言基础
+学习Gin框架
+学习BeeGo框架
 
 ## Laravel Sponsors
 
