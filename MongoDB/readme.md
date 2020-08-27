@@ -25,19 +25,17 @@
 [root@localhost /]# mongod --help
 Options:
   --networkMessageCompressors arg (=snappy,zstd,zlib)
-                                        Comma-separated list of compressors to 
-                                        use for network messages
+                                        用于网络消息的用逗号分隔的压缩器列表
 
-General options:
-  -h [ --help ]                         Show this usage information
-  --version                             Show version information
-  -f [ --config ] arg                   Configuration file specifying 
-                                        additional options
-  --configExpand arg                    Process expansion directives in config 
+常规选项:
+  -h [ --help ]                         显示此用法信息
+  --version                             显示版本信息
+  -f [ --config ] arg                   配置文件指定
+                                        附加选项
+  --configExpand arg                    在配置中处理扩展指令
                                         file (none, exec, rest)
-  --port arg                            Specify port number - 27017 by default
-  --ipv6                                Enable IPv6 support (disabled by 
-                                        default)
+  --port arg                            默认情况下指定端口号- 27017
+  --ipv6                                启用IPv6支持(默认禁用)
   --listenBacklog arg (=128)            Set socket listen backlog size
   --maxConns arg (=1000000)             Max number of simultaneous connections
   --pidfilepath arg                     Full path to pidfile (if not set, no 
