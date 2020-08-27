@@ -122,3 +122,40 @@ The server generated these startup warnings when booting:
 > 
 
 ```
+
+**现在让我们插入一些简单的数据，并对插入的数据进行检索：**
+
+> 下面第一个命令将数字 `追梦小窝` 插入到 iszmxw 集合的 `name` 字段中，`25`插入到 iszmxw 集合的 `age` 字段中
+> 第二个命令测试查找集合中的所有数据
+
+```sh
+> db.iszmxw.insert({name:"追梦小窝",age:25})
+WriteResult({ "nInserted" : 1 })
+> db.iszmxw.find()
+{ "_id" : ObjectId("5f4771292ad494d7f6b8b545"), "name" : "追梦小窝", "age" : 25 }
+> 
+
+```
+
+**如果要停止 mongodb 可以使用以下命令：**
+
+```sh
+[root@localhost ~]# mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --shutdown
+{"t":{"$date":"2020-08-27T08:44:03.418Z"},"s":"I",  "c":"CONTROL",  "id":20697,   "ctx":"main","msg":"Renamed existing log file","attr":{"oldLogPath":"/var/log/mongodb/mongod.log","newLogPath":"/var/log/mongodb/mongod.log.2020-08-27T08-44-03"}}
+killing process with pid: 1529
+[root@localhost ~]# 
+
+```
+
+**也可以在 mongo 的命令出口中实现：**
+
+```sh
+> use admin
+switched to db admin
+> db.shutdownServer()
+server should be down...
+> 
+
+```
+
+**更多命令请参考首页**
