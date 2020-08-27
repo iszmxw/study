@@ -20,10 +20,10 @@
 
 ## sh命令
 
-```shell
+```sh
 
 [root@localhost /]# mongod --help
-Options:
+选项:
   --networkMessageCompressors arg (=snappy,zstd,zlib)
                                         用于网络消息的用逗号分隔的压缩器列表
 
@@ -48,27 +48,16 @@ Options:
   --quiet                               静音输出
   --logpath arg                         日志文件发送到而不是 stdout-必须是文件，而不是 目录
   --syslog                              登录到系统的syslog工具 文件或标准输出
-  --syslogFacility arg                  syslog facility used for mongodb syslog
-                                        message
-  --logappend                           Append to logpath instead of 
-                                        over-writing
-  --logRotate arg                       Set the log rotation behavior 
-                                        (rename|reopen)
-  --timeStampFormat arg                 Desired format for timestamps in log 
-                                        messages. One of iso8601-utc or 
-                                        iso8601-local
-  --setParameter arg                    Set a configurable parameter
-  --bind_ip arg                         Comma separated list of ip addresses to
-                                        listen on - localhost by default
-  --bind_ip_all                         Bind to all ip addresses
-  --noauth                              Run without security
-  --transitionToAuth                    For rolling access control upgrade. 
-                                        Attempt to authenticate over outgoing 
-                                        connections and proceed regardless of 
-                                        success. Accept incoming connections 
-                                        with or without authentication.
-  --slowms arg (=100)                   Value of slow for profile and console 
-                                        log
+  --syslogFacility arg                  用于mongodb syslog的syslog工具消息
+  --logappend                           附加到日志路径而不是盖写
+  --logRotate arg                       设置日志旋转行为(重命名|开放)
+  --timeStampFormat arg                 日志中所需的时间戳格式消息。iso8601-utc或 iso8601-local
+  --setParameter arg                    设置一个可配置参数
+  --bind_ip arg                         逗号分隔的ip地址列表，默认侦听本地主机
+  --bind_ip_all                         绑定到所有ip地址
+  --noauth                              无认证模式运行
+  --transitionToAuth                    用于滚动访问控制升级。尝试通过传出进行身份验证连接和继续不管成功。接受传入的连接是否有身份验证。
+  --slowms arg (=100)                   配置文件和控制台的慢值日志
   --slowOpSampleRate arg (=1)           Fraction of slow ops to include in the 
                                         profile and console log
   --auth                                Run with security
