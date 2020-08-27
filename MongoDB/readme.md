@@ -58,29 +58,20 @@
   --noauth                              无认证模式运行
   --transitionToAuth                    用于滚动访问控制升级。尝试通过传出进行身份验证连接和继续不管成功。接受传入的连接是否有身份验证。
   --slowms arg (=100)                   配置文件和控制台的慢值日志
-  --slowOpSampleRate arg (=1)           Fraction of slow ops to include in the 
-                                        profile and console log
-  --auth                                Run with security
-  --clusterIpSourceWhitelist arg        Network CIDR specification of permitted
-                                        origin for `__system` access
+  --slowOpSampleRate arg (=1)           慢行动的部分，包括在配置文件和控制台日志
+  --auth                                认证模式运行
+  --clusterIpSourceWhitelist arg        网络CIDR规范允许 origin for `__system` access
   --profile arg                         0=off 1=slow, 2=all
-  --cpu                                 Periodically show cpu and iowait 
-                                        utilization
-  --sysinfo                             Print some diagnostic system 
-                                        information
-  --noscripting                         Disable scripting engine
-  --notablescan                         Do not allow table scans
-  --shutdown                            Kill a running server (for init 
-                                        scripts)
-  --keyFile arg                         Private key for cluster authentication
-  --clusterAuthMode arg                 Authentication mode used for cluster 
-                                        authentication. Alternatives are 
-                                        (keyFile|sendKeyFile|sendX509|x509)
+  --cpu                                 定期显示cpu和iowait利用
+  --sysinfo                             打印一些诊断系统信息
+  --noscripting                         关闭脚本引擎
+  --notablescan                         不运行表扫描
+  --shutdown                            杀死正在运行的服务器(用于init)脚本)
+  --keyFile arg                         用于集群身份验证的私钥
+  --clusterAuthMode arg                 用于集群的身份验证模式身份验证。替代(密钥文件| sendKeyFile | sendX509 | x509)
 
-Replication options:
-  --oplogSize arg                       Size to use (in MB) for replication op 
-                                        log. default is 5% of disk space (i.e. 
-                                        large is good)
+复制选项:
+  --oplogSize arg                       复制操作使用的大小(单位为MB)日志。默认为5%的磁盘空间(即大是好的)
 
 Replica set options:
   --replSet arg                         arg is <setname>[/<optionalseedhostlist
