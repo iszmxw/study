@@ -16,8 +16,9 @@
 - [Swoole](https://laravel.com/docs/container)
 - [KafKa](https://laravel.com/docs/session) 以及 [Rabbitmq](https://laravel.com/docs/cache) 
 - [Mysql](https://laravel.com/docs/eloquent)调优技巧.
-- Nginx负载均衡和Nginx反向代理
 - 算法数据结构
+- Nginx负载均衡和Nginx反向代理
+- [Hadoop快速入门](https://hadoop.apache.org/docs/r1.0.4/cn/quickstart.html)
 
 ## 列入计划
 
