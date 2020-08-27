@@ -36,10 +36,9 @@ Options:
                                         file (none, exec, rest)
   --port arg                            默认情况下指定端口号- 27017
   --ipv6                                启用IPv6支持(默认禁用)
-  --listenBacklog arg (=128)            Set socket listen backlog size
-  --maxConns arg (=1000000)             Max number of simultaneous connections
-  --pidfilepath arg                     Full path to pidfile (if not set, no 
-                                        pidfile is created)
+  --listenBacklog arg (=128)            设置套接字侦听积压大小
+  --maxConns arg (=1000000)             最大同时连接数
+  --pidfilepath arg                     pidfile的完整路径（如果未设置，则为否 pidfile已创建）
   --timeZoneInfo arg                    Full path to time zone info directory, 
                                         e.g. /usr/share/zoneinfo
   --nounixsocket                        Disable listening on unix sockets
