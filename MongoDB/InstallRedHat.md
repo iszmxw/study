@@ -12,7 +12,7 @@
 ```sh
 [root@localhost ~]# wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-4.4.0.tgz        # 下载
 [root@localhost ~]# tar -zxvf mongodb-linux-x86_64-rhel70-4.4.0.tgz                                    # 解压
-[root@localhost ~]# mv mongodb-src-r4.2.8  /usr/local/mongodb4                                         # 将解压包拷贝到指定目录
+[root@localhost ~]# mv mongodb-linux-x86_64-rhel70-4.4.0  /usr/local/mongodb4                                         # 将解压包拷贝到指定目录
 ```
 
 > MongoDB 的可执行文件位于 bin 目录下，所以可以将其添加到 PATH 路径中：
@@ -39,6 +39,7 @@ export PATH
 ## 创建数据库目录
 
 **默认情况下 MongoDB 启动后会初始化以下两个目录：**
+
 - 数据存储目录：/var/lib/mongodb
 - 日志文件目录：/var/log/mongodb
 
@@ -61,4 +62,52 @@ about to fork child process, waiting until server is ready for connections.
 forked process: 1365
 child process started successfully, parent exiting
 [root@localhost ~]# 
+```
+
+**打开 /var/log/mongodb/mongod.log 文件看到以下信息，说明启动成功。**
+
+```sh
+[root@localhost ~]# cat /var/log/mongodb/mongod.log | grep Listening
+{"t":{"$date":"2020-08-27T04:30:25.223-04:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+{"t":{"$date":"2020-08-27T04:30:25.223-04:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0"}}
+[root@localhost ~]# 
+```
+
+
+## MongoDB 后台管理 Shell
+
+> 如果你需要进入 mongodb 后台管理，你需要先打开 mongodb 装目录的下的 bin 目录，然后执行 mongo 命令文件。
+> 当然前面我们已经修改了`/etc/profile`文件，添加了环境变量，可以直接执行`mongo`
+> MongoDB Shell 是 MongoDB 自带的交互式 Javascript shell，用来对 MongoDB 进行操作和管理的交互式环境。
+> 当你进入 mongoDB 后台后，它默认会链接到 test 文档（数据库）：
+
+```sh
+[root@localhost ~]# mongo
+MongoDB shell version v4.4.0
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("fa6a3b84-361d-4c44-ac4b-422386bebeba") }
+MongoDB server version: 4.4.0
+---
+The server generated these startup warnings when booting: 
+        2020-08-27T04:30:25.190-04:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+        2020-08-27T04:30:25.191-04:00: You are running this process as the root user, which is not recommended
+        2020-08-27T04:30:25.195-04:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+        2020-08-27T04:30:25.195-04:00: /sys/kernel/mm/transparent_hugepage/defrag is 'always'. We suggest setting it to 'never'
+        2020-08-27T04:30:25.195-04:00: Soft rlimits too low
+        2020-08-27T04:30:25.195-04:00:         currentValue: 1024
+        2020-08-27T04:30:25.195-04:00:         recommendedMinimum: 64000
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> 
+
 ```
