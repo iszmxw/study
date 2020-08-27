@@ -111,3 +111,14 @@ The server generated these startup warnings when booting:
 > 
 
 ```
+
+**由于它是一个JavaScript shell，您可以运行一些简单的算术运算:**
+
+```sh
+> 8*8
+64
+> 8+8
+16
+> 
+
+```
