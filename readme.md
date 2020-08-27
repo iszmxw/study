@@ -7,7 +7,7 @@
 <a href="#"><img src="https://img.shields.io/badge/License-MIT-red" alt="License"></a>
 </p>
 
-## 学习计划
+## 计划大纲
 
 这是我最近整理的一些计划，由于有些东西不是很了解，下面吧这些东西列入以后的学习计划中，按照下面的计划不断完善自己，温故而知新
 
