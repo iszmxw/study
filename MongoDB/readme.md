@@ -73,20 +73,20 @@
 复制选项:
   --oplogSize arg                       复制操作使用的大小(单位为MB)日志。默认为5%的磁盘空间(即大是好的)
 
-Replica set options:
+副本设置选项:
   --replSet arg                         arg is <setname>[/<optionalseedhostlist
                                         >]
   --enableMajorityReadConcern [=arg(=1)] (=1)
                                         Enables majority readConcern
 
-Sharding options:
+分片选项:
   --configsvr                           Declare this is a config db of a 
                                         cluster; default port 27019; default 
                                         dir /data/configdb
   --shardsvr                            Declare this is a shard db of a 
                                         cluster; default port 27018
 
-Storage options:
+储存选项:
   --storageEngine arg                   What storage engine to use - defaults 
                                         to wiredTiger if no data files present
   --dbpath arg                          Directory for datafiles - defaults to 
@@ -104,7 +104,7 @@ Storage options:
                                         the oplog. Default is 0 (turned off). 
                                         Fractions are allowed (e.g. 1.5 hours)
 
-WiredTiger options:
+WiredTiger选项:
   --wiredTigerCacheSizeGB arg           Maximum amount of memory to allocate 
                                         for cache; Defaults to 1/2 of physical 
                                         RAM
@@ -120,16 +120,16 @@ WiredTiger options:
                                         Use prefix compression on row-store 
                                         leaf pages
 
-Free Monitoring Options:
+免费监控选项:
   --enableFreeMonitoring arg            Enable Cloud Free Monitoring 
                                         (on|runtime|off)
   --freeMonitoringTag arg               Cloud Free Monitoring Tags
 
-AWS IAM Options:
+AWS IAM 选项:
   --awsIamSessionToken arg              AWS Session Token for temporary 
                                         credentials
 
-TLS Options:
+TLS 选项:
   --tlsOnNormalPorts                    Use TLS on configured ports
   --tlsMode arg                         Set the TLS operation mode 
                                         (disabled|allowTLS|preferTLS|requireTLS
