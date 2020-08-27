@@ -8,7 +8,7 @@
 
 [Linux安装](https://docs.mongodb.com/manual/administration/install-on-linux/)
 
-- [Install on Red Hat](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/)
+- [Install on Red Hat](InstallRedHat.md)
 
 - [Install on Ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
