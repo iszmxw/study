@@ -39,22 +39,15 @@ Options:
   --listenBacklog arg (=128)            设置套接字侦听积压大小
   --maxConns arg (=1000000)             最大同时连接数
   --pidfilepath arg                     pidfile的完整路径（如果未设置，则为否 pidfile已创建）
-  --timeZoneInfo arg                    Full path to time zone info directory, 
-                                        e.g. /usr/share/zoneinfo
-  --nounixsocket                        Disable listening on unix sockets
-  --unixSocketPrefix arg                Alternative directory for UNIX domain 
-                                        sockets (defaults to /tmp)
-  --filePermissions arg                 Permissions to set on UNIX domain 
-                                        socket file - 0700 by default
-  --fork                                Fork server process
-  -v [ --verbose ] [=arg(=v)]           Be more verbose (include multiple times
-                                        for more verbosity e.g. -vvvvv)
-  --quiet                               Quieter output
-  --logpath arg                         Log file to send write to instead of 
-                                        stdout - has to be a file, not 
-                                        directory
-  --syslog                              Log to system's syslog facility instead
-                                        of file or stdout
+  --timeZoneInfo arg                    时区信息目录的完整路径， 例如/usr/share/zoneinfo
+  --nounixsocket                        禁用监听Unix套接字
+  --unixSocketPrefix arg                UNIX域的备用目录 套接字（默认为/ tmp）
+  --filePermissions arg                 在UNIX域上设置的权限 套接字文件-默认为0700
+  --fork                                叉子服务器过程
+  -v [ --verbose ] [=arg(=v)]           更详细（包括多次） 以获得更多详细信息-vvvvv）
+  --quiet                               静音输出
+  --logpath arg                         日志文件发送到而不是 stdout-必须是文件，而不是 目录
+  --syslog                              登录到系统的syslog工具 文件或标准输出
   --syslogFacility arg                  syslog facility used for mongodb syslog
                                         message
   --logappend                           Append to logpath instead of 
