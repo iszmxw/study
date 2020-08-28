@@ -6,7 +6,7 @@
 
 [Linux上安装](https://docs.mongodb.com/manual/administration/install-on-linux/)
 
-- [Install on Red Hat](InstallRedHat.md)（文档已更新）
+- [Install on Red Hat](install-red-hat.md)（文档已更新）
 
 - [Install on Ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
