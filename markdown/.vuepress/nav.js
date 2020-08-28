@@ -1,39 +1,27 @@
 module.exports = [
-    // {
-    //   text: 'JavaScript',
-    //   items: [
-    //     {
-    //       text: 'one',
-    //       link: '/javascript/one'
-    //     },
-    //     {
-    //       text: 'two',
-    //       link: '/javascript/two'
-    //     }
-    //   ]
-    // }
-    // {
-    //   text: 'Github',
-    //   link: 'https://github.com/wginit'
-    // },
-    // {
-    //   text: '学习资源',
-    //   items: [{
-    //       text: '前端学习路线',
-    //       link: 'http://www.imooc.com/article/261756'
-    //     },
-    //     {
-    //       text: '前端学习视频',
-    //       link: '/front-end-video/'
-    //     },
-    //     {
-    //       text: '全栈',
-    //       link: '/resource/'
-    //     }
-    //   ]
-    // },
-    // {
-    //   text: '优文转载',
-    //   link: '/reprint/'
-    // }
+    {
+      text: 'MongoDB',
+      items: [
+        {
+          text: '介绍',
+          link: '/mongodb/mongodb-index'
+        },
+        {
+          text: '安装',
+          link: '/mongodb/install-red-hat'
+        }
+      ]
+    },
+    {
+      text: '学习资源',
+      items: [{
+          text: '前端学习路线',
+          link: 'http://www.imooc.com/article/261756'
+        },
+        {
+          text: '全栈',
+          link: 'http://baidu.com'
+        }
+      ]
+    }
 ]

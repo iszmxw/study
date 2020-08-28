@@ -13,7 +13,7 @@ module.exports = {
         ['script', { src: 'https://s4.cnzz.com/z_stat.php?id=1279222603&web_id=1279222603' }]
     ],
     markdown: {
-        lineNumbers: false, // 代码显示行号
+        lineNumbers: true, // 代码显示行号
         // markdown-it-anchor 的选项
         // anchor: { permalink: false },
         // // markdown-it-toc 的选项
