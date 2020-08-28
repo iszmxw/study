@@ -1,11 +1,11 @@
-
 const _nav = require('./nav')
 const _sidebar = require('./sidebar')
 
 module.exports = {
+    title: '小窝笔记',
+    description: '小窝笔记',
     base: '/',
-    title: 'WorkNotes',
-    description: '腾付通工作笔记',
+    port: '',
     dest: '.vuepress/dist',
     head: [
         ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
@@ -13,7 +13,7 @@ module.exports = {
         ['script', { src: 'https://s9.cnzz.com/z_stat.php?id=1278302134&web_id=1278302134' }]
     ],
     markdown: {
-        lineNumbers: true, // 代码显示行号
+        lineNumbers: false, // 代码显示行号
         // markdown-it-anchor 的选项
         // anchor: { permalink: false },
         // // markdown-it-toc 的选项

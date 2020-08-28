@@ -1,4 +1,5 @@
 ## 获取下载地址
+
 - MongoDB 源码下载地址：https://www.mongodb.com/download-center#community
 
 ![image-20200827154508841](../static/images/InstallRedHat/image-20200827154508841.png)
@@ -22,9 +23,9 @@
 [root@localhost ~]# 
 ```
 
-**export PATH=<mongodb-install-directory>/bin:$PATH**
+**export PATH=`<mongodb-install-directory>`/bin:$PATH**
 
-> <mongodb-install-directory> 为你 MongoDB 的安装路径。如本文的 /usr/local/mongodb4 。
+> `<mongodb-install-directory>` 为你 MongoDB 的安装路径。如本文的 /usr/local/mongodb4 。
 
 ```sh
 PATH=${PATH}:/usr/local/mongodb4/bin

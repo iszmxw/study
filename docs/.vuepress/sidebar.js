@@ -1,7 +1,7 @@
 module.exports = [
     getSideBar('MongoDB', [
-        ['/MongoDB/readme', 'MongoDB'],
-        ['/MongoDB/InstallRedHat', 'RedHat环境安装']
+        ['/mongodb/mongodb-index', 'MongoDB'],
+        ['/mongodb/install-red-hat', 'RedHat环境安装']
     ])
 ]
 
