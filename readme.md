@@ -1,4 +1,4 @@
-<p align="center"><img src="static/svg/plan.svg" width="100"></p>
+<p align="center"><img src="docs/static/svg/plan.svg" width="100"></p>
 
 <p align="center">
 <a href="#"><img src="https://img.shields.io/badge/%E8%AE%A1-%E5%88%92-green?logo=symantec&style=plastic" alt="计划"></a>
