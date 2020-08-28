@@ -74,89 +74,66 @@
   --oplogSize arg                       复制操作使用的大小(单位为MB)日志。默认为5%的磁盘空间(即大是好的)
 
 副本设置选项:
-  --replSet arg                         arg is <setname>[/<optionalseedhostlist
-                                        >]
+  --replSet arg                         arg is <setname>[/<optionalseedhostlist>]
   --enableMajorityReadConcern [=arg(=1)] (=1)
-                                        Enables majority readConcern
+                                        使多数readConcern
 
 分片选项:
-  --configsvr                           Declare this is a config db of a 
-                                        cluster; default port 27019; default 
-                                        dir /data/configdb
-  --shardsvr                            Declare this is a shard db of a 
-                                        cluster; default port 27018
+  --configsvr                           声明这是一个配置数据库集群;默认端口27019;默认的 dir /data/configdb
+  --shardsvr                            声明这是a的一个碎片db集群;默认端口27018
 
 储存选项:
-  --storageEngine arg                   What storage engine to use - defaults 
-                                        to wiredTiger if no data files present
-  --dbpath arg                          Directory for datafiles - defaults to 
-                                        /data/db
-  --directoryperdb                      Each database will be stored in a 
-                                        separate directory
-  --syncdelay arg (=60)                 Seconds between disk syncs
-  --journalCommitInterval arg (=100)    how often to group/batch commit (ms)
-  --upgrade                             Upgrade db if needed
-  --repair                              Run repair on all dbs
-  --journal                             Enable journaling
-  --nojournal                           Disable journaling (journaling is on by
-                                        default for 64 bit)
-  --oplogMinRetentionHours arg (=0)     Minimum number of hours to preserve in 
-                                        the oplog. Default is 0 (turned off). 
-                                        Fractions are allowed (e.g. 1.5 hours)
+  --storageEngine arg                   使用什么存储引擎-如果没有数据文件，默认使用wiredTiger
+  --dbpath arg                          数据文件目录-默认为`/data/db`
+  --directoryperdb                      每个数据库将存储在单独的目录中
+  --syncdelay arg (=60)                 磁盘同步之间的秒数
+  --journalCommitInterval arg (=100)    分组/批处理提交的频率(ms)
+  --upgrade                             如果需要就更新数据库
+  --repair                              修复所有的数据库
+  --journal                             启用日志记录
+  --nojournal                           禁用日志记录(默认为64位日志记录)
+  --oplogMinRetentionHours arg (=0)     oplog中保存的最小小时数。默认值为0(关闭)。允许分数(如1.5小时)
 
 WiredTiger选项:
-  --wiredTigerCacheSizeGB arg           Maximum amount of memory to allocate 
-                                        for cache; Defaults to 1/2 of physical 
-                                        RAM
+  --wiredTigerCacheSizeGB arg           为缓存分配的最大内存量;默认为物理RAM的1/2
   --wiredTigerJournalCompressor arg (=snappy)
-                                        Use a compressor for log records 
+                                        使用压缩器保存日志记录 
                                         [none|snappy|zlib|zstd]
-  --wiredTigerDirectoryForIndexes       Put indexes and data in different 
-                                        directories
+  --wiredTigerDirectoryForIndexes       将索引和数据放在不同的目录中
   --wiredTigerCollectionBlockCompressor arg (=snappy)
-                                        Block compression algorithm for 
-                                        collection data [none|snappy|zlib|zstd]
+                                        采集数据的块压缩算法[none|snappy|zlib|zstd]
   --wiredTigerIndexPrefixCompression arg (=1)
-                                        Use prefix compression on row-store 
-                                        leaf pages
+                                        对行存储的叶页使用前缀压缩
 
 免费监控选项:
-  --enableFreeMonitoring arg            Enable Cloud Free Monitoring 
+  --enableFreeMonitoring arg            启用无云监控 
                                         (on|runtime|off)
-  --freeMonitoringTag arg               Cloud Free Monitoring Tags
+  --freeMonitoringTag arg               无云监控标签
 
 AWS IAM 选项:
-  --awsIamSessionToken arg              AWS Session Token for temporary 
-                                        credentials
+  --awsIamSessionToken arg              用于临时凭证的AWS会话令牌
 
 TLS 选项:
-  --tlsOnNormalPorts                    Use TLS on configured ports
-  --tlsMode arg                         Set the TLS operation mode 
-                                        (disabled|allowTLS|preferTLS|requireTLS
-                                        )
-  --tlsCertificateKeyFile arg           Certificate and key file for TLS
-  --tlsCertificateKeyFilePassword arg   Password to unlock key in the TLS 
-                                        certificate key file
-  --tlsClusterFile arg                  Key file for internal TLS 
+  --tlsOnNormalPorts                    在配置的端口上使用TLS
+  --tlsMode arg                         设置TLS操作模式
+                                        (disabled|allowTLS|preferTLS|requireTLS)
+  --tlsCertificateKeyFile arg           TLS证书和密钥文件
+  --tlsCertificateKeyFilePassword arg   密码解锁密钥在TLS
+                                        证书密钥文件
+  --tlsClusterFile arg                  内部TLS的密钥文件
                                         authentication
-  --tlsClusterPassword arg              Internal authentication key file 
+  --tlsClusterPassword arg              内部认证密钥文件
                                         password
-  --tlsCAFile arg                       Certificate Authority file for TLS
-  --tlsClusterCAFile arg                CA used for verifying remotes during 
+  --tlsCAFile arg                       TLS证书权威文件
+  --tlsClusterCAFile arg                期间用于验证远程的CA
                                         inbound connections
-  --tlsCRLFile arg                      Certificate Revocation List file for 
+  --tlsCRLFile arg                      证书撤销列表文件
                                         TLS
-  --tlsDisabledProtocols arg            Comma separated list of TLS protocols 
-                                        to disable [TLS1_0,TLS1_1,TLS1_2]
+  --tlsDisabledProtocols arg            用逗号分隔的TLS协议列表，禁用[TLS1_0,TLS1_1,TLS1_2]
   --tlsAllowConnectionsWithoutCertificates 
-                                        Allow client to connect without 
-                                        presenting a certificate
-  --tlsAllowInvalidHostnames            Allow server certificates to provide 
-                                        non-matching hostnames
-  --tlsAllowInvalidCertificates         Allow connections to servers with 
-                                        invalid certificates
-  --tlsFIPSMode                         Activate FIPS 140-2 mode at startup
-  --tlsLogVersions arg                  Comma separated list of TLS protocols 
-                                        to log on connect [TLS1_0,TLS1_1,TLS1_2
-                                        ]
+                                        允许客户端连接不提供证书
+  --tlsAllowInvalidHostnames            允许服务器证书提供不匹配的主机名
+  --tlsAllowInvalidCertificates         允许连接到使用无效证书的服务器
+  --tlsFIPSMode                         启动FIPS 140-2模式
+  --tlsLogVersions arg                  用于登录的TLS协议列表[TLS1_0,TLS1_1,TLS1_2]
 ```
