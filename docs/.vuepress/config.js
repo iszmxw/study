@@ -10,7 +10,7 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
         ['meta', { 'name': 'viewport', content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" }],
-        ['script', { src: 'https://s9.cnzz.com/z_stat.php?id=1278302134&web_id=1278302134' }]
+        ['script', { src: 'https://s4.cnzz.com/z_stat.php?id=1279222603&web_id=1279222603' }]
     ],
     markdown: {
         lineNumbers: false, // 代码显示行号
