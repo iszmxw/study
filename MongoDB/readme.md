@@ -20,7 +20,7 @@
 
 ## sh命令
 
-
+> ```sh
 > [root@localhost /]# mongod --help
 > 选项:
 >   --networkMessageCompressors arg (=snappy,zstd,zlib)
@@ -135,4 +135,4 @@
 >   --tlsAllowInvalidCertificates         允许连接到使用无效证书的服务器
 >   --tlsFIPSMode                         启动FIPS 140-2模式
 >   --tlsLogVersions arg                  用于登录的TLS协议列表[TLS1_0,TLS1_1,TLS1_2]
-
+> ```
