@@ -8,7 +8,7 @@ module.exports = {
     port: '',
     dest: 'docs',
     head: [
-        ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
+        ['link', { rel: 'icon', href: '/assets/img/plan.svg' }],
         ['meta', { 'name': 'viewport', content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" }],
         ['script', { src: 'https://s4.cnzz.com/z_stat.php?id=1279222603&web_id=1279222603' }]
     ],
@@ -24,7 +24,7 @@ module.exports = {
         // }
     },
     themeConfig: {
-        logo: '/assets/img/logo.png',
+        logo: '/assets/img/plan.svg',
         nav: _nav,
         sidebar: _sidebar,
         sidebarDepth: 1,

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /assets/img/logo.png
+heroImage: /assets/img/plan.svg
 actionText: 开始预览
 actionLink: /mongodb/mongodb-index
 title: 小窝笔记
