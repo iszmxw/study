@@ -1,9 +1,9 @@
 ## 获取下载地址
 - MongoDB 源码下载地址：https://www.mongodb.com/download-center#community
 
-![image-20200827154508841](InstallRedHat/images/image-20200827154508841.png)
+![image-20200827154508841](../static/images/InstallRedHat/image-20200827154508841.png)
 
-![image-20200827155121384](InstallRedHat/images/image-20200827155121384.png)
+![image-20200827155121384](../static/images/InstallRedHat/image-20200827155121384.png)
 
 ## 下载
 
