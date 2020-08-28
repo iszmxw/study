@@ -4,11 +4,9 @@
 
 ## 安装
 
-[安装MongoDB](https://www.runoob.com/mongodb/mongodb-linux-install.html)
+[Linux上安装](https://docs.mongodb.com/manual/administration/install-on-linux/)
 
-[Linux安装](https://docs.mongodb.com/manual/administration/install-on-linux/)
-
-- [Install on Red Hat](InstallRedHat.md)
+- [Install on Red Hat](InstallRedHat.md)（文档已更新）
 
 - [Install on Ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
