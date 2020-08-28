@@ -6,7 +6,7 @@ module.exports = {
     description: '小窝笔记',
     base: '/',
     port: '',
-    dest: '.vuepress/dist',
+    dest: 'docs',
     head: [
         ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
         ['meta', { 'name': 'viewport', content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" }],
