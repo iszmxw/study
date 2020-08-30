@@ -2,8 +2,8 @@ const _nav = require('./nav')
 const _sidebar = require('./sidebar')
 
 module.exports = {
-    title: '小窝笔记',
-    description: '小窝笔记',
+    title: '追梦小窝笔记',
+    description: '记录日常开发笔记',
     base: '/',
     port: '',
     dest: 'docs',
