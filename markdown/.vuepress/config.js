@@ -27,10 +27,10 @@ module.exports = {
         logo: '/assets/img/plan.svg',
         nav: _nav,
         sidebar: _sidebar,
-        sidebarDepth: 1,
+        sidebarDepth: 2,        // 默认的深度是 1，它将提取到 h2 的标题，设置成 0 将会禁用标题（headers）链接，同时，最大的深度为 2，它将同时提取 h2 和 h3 标题。
         lastUpdated: '最近更新', // 显示更新时间
         searchMaxSuggestoins: 10,
-        displayAllHeaders: true,
+        displayAllHeaders: false,  // 显示所有页面的标题链接，默认值：false
         serviceWorker: {
             updatePopup: true,
             // updatePopup: {
