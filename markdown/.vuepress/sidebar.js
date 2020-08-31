@@ -4,7 +4,9 @@ module.exports = [
     ]),
     getSideBar('MongoDB', [
         ['/mongodb/mongodb-index', 'MongoDB'],
-        ['/mongodb/install-red-hat', 'RedHat环境安装']
+        ['/mongodb/mongodb-install-red-hat', 'RedHat环境安装'],
+        ['/mongodb/mongodb-create-database', '创建数据库'],
+        ['/mongodb/mongodb-drop-database', '删除数据库'],
     ])
 ]
 
