@@ -9,7 +9,7 @@
 
 ## 索引
 
-- [MongoDB](../markdown/mongodb/mongodb-index.md)
+- [MongoDB](./markdown/mongodb/mongodb-index.md)
 - [Swoole](#)
 - [KafKa](#) 以及 [Rabbitmq](#) 
 - [Mysql](#)调优技巧.
